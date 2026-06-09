@@ -8,6 +8,12 @@
   cursor: pointer;
 }
 
+/* テキスト側が余白を吸収し、写真の幅を一定に保つ */
+.p-member__meta {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
 /* 偶数番のカードは左右反転レイアウト */
 .p-member--mirror {
   flex-direction: row-reverse;
@@ -29,8 +35,8 @@
 /* 写真スロット：レイアウト用の箱。中身は WebGL プレーンが上に重なって描く。
    WebGL 非対応時はこのイニシャルがそのまま見える（フォールバック）。 */
 .p-member__photo {
-  width: 100%;
-  max-width: 360px;
+  flex: none;               /* テキスト量に左右されない固定幅にする */
+  width: min(360px, 45%);   /* セル幅が狭ければ縮むが、4枚とも同じ比率 */
   aspect-ratio: 4/5;
   border-radius: var(--radius);
   overflow: hidden;

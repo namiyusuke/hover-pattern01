@@ -11,16 +11,16 @@ import fragmentShader from './shaders/fragment.glsl'
 const members = [
   { company:"Lorem Inc.",   first:"Lorem",  last:"Ipsum",   roles:["Lorem ipsum","Dolor sit amet"],
     bio:"Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.",
-    photo:"https://picsum.photos/seed/minato/800/1000",   tint:["#dcd9cf","#b7b2a3"] },
+    photo:"https://picsum.photos/id/1018/800/1000",   tint:["#bcd2e8","#7da4c7"] },   // 山と雲
   { company:"Dolor Co.",    first:"Dolor",  last:"Amet",    roles:["Consectetur","Adipiscing elit"],
     bio:"Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    photo:"https://picsum.photos/seed/hasegawa/800/1000", tint:["#cfcfcf","#8f8f8f"] },
+    photo:"https://picsum.photos/id/1015/800/1000",   tint:["#cdd6cf","#8f9b8f"] },   // 渓谷の川
   { company:"Sit Studio",   first:"Consectetur", last:"Elit", roles:["Tempor incididunt","Ut labore"],
     bio:"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-    photo:"https://picsum.photos/seed/hara/800/1000",     tint:["#bcd2e8","#7da4c7"] },
+    photo:"https://picsum.photos/id/1036/800/1000",   tint:["#cfe0d6","#7da48c"] },   // 滝
   { company:"Amet Lab.",    first:"Tempor", last:"Labore",  roles:["Quis nostrud","Exercitation"],
     bio:"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.",
-    photo:"https://picsum.photos/seed/nenoki/800/1000",   tint:["#dfe6dd","#a9bda4"] },
+    photo:"https://picsum.photos/id/1043/800/1000",   tint:["#dfe6dd","#a9bda4"] },   // 森
 ]
 
 // ===================================================================
