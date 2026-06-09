@@ -226,6 +226,6 @@ if(initGL()){
   onResize()
   window.addEventListener("resize", onResize)
   tick()
- buildGUI()   // GUI は常に非表示（params の初期値で固定）
+//  buildGUI()   // GUI は常に非表示（params の初期値で固定）
 }
 // initGL が false の場合は CSS のイニシャル表示がそのまま残る（フォールバック）
