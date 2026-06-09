@@ -1,0 +1,37 @@
+/* ===========================================================
+   Foundation — 変数・リセット・ベース要素
+   =========================================================== */
+:root {
+  --bg: #000;
+  --fg: #fff;
+  --muted: #8a8a8a;
+  --radius: 14px;
+  --col-gap: 120px;
+  --row-gap: 140px;
+  --font: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font);
+  line-height: 1.4;
+  padding: 120px 8vw 160px;
+  overflow-x: hidden;
+}
+
+@media (max-width: 820px) {
+  body {
+    padding: 80px 6vw 100px;
+  }
+}

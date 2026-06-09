@@ -1,0 +1,101 @@
+/* ===========================================================
+   Object / Project — メンバーカード
+   =========================================================== */
+.p-member {
+  display: flex;
+  column-gap: 36px;
+  align-items: start;
+  cursor: pointer;
+}
+
+/* 偶数番のカードは左右反転レイアウト */
+.p-member--mirror {
+  flex-direction: row-reverse;
+}
+
+.p-member--mirror .p-member__photo {
+  order: 2;
+}
+
+.p-member--mirror .p-member__meta {
+  order: 1;
+  text-align: right;
+}
+
+.p-member--mirror .p-member__bio {
+  margin-left: auto;
+}
+
+/* 写真スロット：レイアウト用の箱。中身は WebGL プレーンが上に重なって描く。
+   WebGL 非対応時はこのイニシャルがそのまま見える（フォールバック）。 */
+.p-member__photo {
+  width: 100%;
+  max-width: 360px;
+  aspect-ratio: 4/5;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #181818;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.p-member__initial {
+  font-size: 48px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, .4);
+}
+
+.p-member__company {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.p-member__name {
+  margin-top: 14px;
+  font-size: clamp(26px, 2.4vw, 34px);
+  font-weight: 700;
+  line-height: 1.06;
+  letter-spacing: -0.01em;
+}
+
+.p-member__bio {
+  margin-top: 18px;
+  max-width: 34ch;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+.p-member__roles {
+  margin-top: 48px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+@media (max-width: 820px) {
+  .p-member,
+  .p-member--mirror {
+    display: block;
+  }
+
+  .p-member--mirror .p-member__photo {
+    order: 0;
+  }
+
+  .p-member--mirror .p-member__meta {
+    order: 0;
+    text-align: left;
+  }
+
+  .p-member__photo {
+    max-width: 300px;
+  }
+.p-member__meta{
+  margin-top: 24px;
+}
+  .p-member__roles {
+    margin-top: 24px;
+  }
+}

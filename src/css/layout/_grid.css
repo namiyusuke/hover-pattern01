@@ -1,0 +1,18 @@
+/* ===========================================================
+   Layout — メンバー一覧のグリッド
+   =========================================================== */
+.l-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: var(--col-gap);
+  row-gap: var(--row-gap);
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 820px) {
+  .l-grid {
+    grid-template-columns: 1fr;
+    row-gap: 80px;
+  }
+}
