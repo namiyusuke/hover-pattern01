@@ -28,9 +28,7 @@
   text-align: right;
 }
 
-.p-member--mirror .p-member__bio {
-  margin-left: auto;
-}
+
 
 /* 写真スロット：レイアウト用の箱。中身は WebGL プレーンが上に重なって描く。
    WebGL 非対応時はこのイニシャルがそのまま見える（フォールバック）。 */
